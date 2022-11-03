@@ -49,19 +49,19 @@ $input = readline("Enter your choice (1-4): ");
 
 if($input == 1) {
     $circle = new Geometry();
-    $circle->radius = readline("Enter circle radius: ");
+    $circle->radius = (int) readline("Enter circle radius: ");
     echo "Area of circle: " . $circle->circleArea($circle->radius);
     echo PHP_EOL;
 } else if($input == 2) {
     $rectangle = new Geometry();
-    $rectangle->rectangleWidth = readline("Enter rectangle width: ");
-    $rectangle->rectangleHeight = readline ("Enter rectangle height: ");
+    $rectangle->rectangleWidth = (int) readline("Enter rectangle width: ");
+    $rectangle->rectangleHeight = (int) readline ("Enter rectangle height: ");
     echo "Area of rectangle: " . $rectangle->rectangleArea($rectangle->rectangleWidth, $rectangle->rectangleHeight);
     echo PHP_EOL;
 }else if($input == 3) {
     $triangle = new Geometry();
-    $triangle->triangleBase = readline("Enter triangle base: ");
-    $triangle->triangleHeight = readline("Enter triangle height: ");
+    $triangle->triangleBase = (int) readline("Enter triangle base: ");
+    $triangle->triangleHeight = (int) readline("Enter triangle height: ");
     echo "Area of triangle: " . $triangle->triangleArea($triangle->triangleBase, $triangle->triangleHeight);
     echo PHP_EOL;
 } else if ($input == 4) {
